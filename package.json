@@ -1,0 +1,19 @@
+{
+  "name": "TEST",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "$(npm bin)/babel index.js > index.prod.js",
+    "buildModules": "clear && $(npm bin)/babel modules/index.js > modules/index.prod.js && node modules/index.prod.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}

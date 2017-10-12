@@ -1,0 +1,41 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["last 2 versions"]
+      }
+    }]
+  ]
+}
+
+
+
+// We can use the env option to set specific options when in a certain environment:
+// {
+//   "env": {
+//     "production": {
+//       "plugins": ["transform-react-constant-elements"]
+//     },
+//     "testing": {
+//       "plugins": ["transform-react"]
+//     }
+//   }
+// }
+
+
+
+
+
+
+// {
+//   "presets": [
+//     ["env", {
+//       "modules": false,
+//       "targets": {
+//         "browsers": ["last 2 versions"]
+//       }
+//     }],
+//     "react"
+//   ]
+// }
