@@ -20,5 +20,5 @@ let y = ['c']
 let z = ['d', 'e']
 let xyz = [...x, ...y, ...z]
 
-// console.log(a)
-// console.log(xyz)
+console.log(a)
+console.log(xyz)

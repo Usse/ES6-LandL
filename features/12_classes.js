@@ -23,6 +23,8 @@ console.log(person.displayName())
 
 
 
+
+
 // New way
 class Person2 {
   constructor(firstName, lastName) {
@@ -44,19 +46,19 @@ console.log(person2.displayName())
 
 
 
-// class Employee extends Person {
-//   constructor(firstName, lastName, employeeId) {
-//     super(firstName, lastName)
-//     this.employeeId = employeeId
-//   }
+class Employee extends Person {
+  constructor(firstName, lastName, employeeId) {
+    super(firstName, lastName)
+    this.employeeId = employeeId
+  }
 
-//   describe() {
-//     return `${super.displayName()} (ID: ${this.employeeId})`
-//   }
-// }
+  describe() {
+    return `${super.displayName()} (ID: ${this.employeeId})`
+  }
+}
 
-// let employee = new Employee("(Uncle) Bob", "Martin", 1234)
-// console.log(employee.describe())
+let employee = new Employee("(Uncle) Bob", "Martin", 1234)
+console.log(employee.describe())
 
 
 
@@ -71,8 +73,8 @@ class Repo {
     return "Elementary"
   }
 }
-
 console.log(Repo.getName())
 
-// let r = new Repo();
-// console.log(r.getName())
+//This will throw an error
+let r = new Repo();
+console.log(r.getName())

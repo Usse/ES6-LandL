@@ -38,5 +38,3 @@ makeRequest("/foo", 500)
 makeRequest("/foo", 500, function(body) {
   doSomething(body)
 })
-
-

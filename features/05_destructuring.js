@@ -18,17 +18,17 @@ console.log(month)
 console.log(day)
 
 // New way
-// function today() {
-//   return {
-//     month: 6,
-//     day: 2,
-//     year: 2015
-//   }
-// }
+function today() {
+  return {
+    month: 6,
+    day: 2,
+    year: 2015
+  }
+}
 
-// let {month, day} = today()
-// console.log(month)
-// console.log(day)
+let {month, day} = today()
+console.log(month)
+console.log(day)
 
 
 
@@ -40,17 +40,17 @@ console.log(day)
 // Destructuring (Arrays)
 
 // // Old way
-// function today() {
-//   return [6,2,2015]
-// }
+function today() {
+  return [6,2,2015]
+}
 
-// var day = today()[0]
-// var month = today()[1]
-// console.log(day, month)
+var day = today()[0]
+var month = today()[1]
+console.log(day, month)
 
 // // New way
-// function today() {
-//   return [6,2,2015]
-// }
-// let [day, month, year ] = today()
-// console.log(day, month, year)
+function today() {
+  return [6,2,2015]
+}
+let [day, month, year ] = today()
+console.log(day, month, year)

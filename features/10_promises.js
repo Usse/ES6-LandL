@@ -23,59 +23,50 @@ let someLongTask = () => {
   });
 }
 
-
-// let someOtherLongTask = (msg) => {
-//   return new Promise(function(resolve,reject) {
-//       setTimeout(function(){
-//            resolve("someOtherLongTask says: " + msg);
-//       }, 1500);
-//   });
-// }
-
-
-
+let someOtherLongTask = (msg) => {
+  return new Promise(function(resolve,reject) {
+      setTimeout(function(){
+           resolve("someOtherLongTask says: " + msg);
+      }, 1500);
+  });
+}
 
 someLongTask()
 .then(function (msg) {
     console.log("Single: " + msg);
 })
 
-
-// someLongTask()
-// .then(someOtherLongTask)
-// .then(function (msg) {
-//     console.log("Chained: " + msg);
-// });
-
-
-
-
-// var promises = [someLongTask(), someOtherLongTask("Hello")];
-
-// Promise.all(promises).then(function(results) {
-//     var msg1 = results[0];
-//     var msg2 = results[1];
-//     console.log("All: " + msg1+ " then "+ msg2);
-// });
+someLongTask()
+.then(someOtherLongTask)
+.then(function (msg) {
+    console.log("Chained: " + msg);
+});
 
 
 
 
 
-// const shouldIBuyTheNewIphone = new Promise(
-//   (resolve, reject) => {
-//       if (true) {
-//           resolve('Yes!');
-//       } else {
-//           const reason = new Error('Nope');
-//           reject(reason);
-//       }
+var promises = [someLongTask(), someOtherLongTask("Hello")];
 
-//   }
-// );
+Promise.all(promises).then(function(results) {
+    var msg1 = results[0];
+    var msg2 = results[1];
+    console.log("All: " + msg1+ " then "+ msg2);
+});
 
-// shouldIBuyTheNewIphone.then( (msg) => {
-//   console.log(msg)
-// }).catch((error) => {
-//   console.log(error)
-// } )
+const shouldIBuyTheNewIphone = new Promise(
+  (resolve, reject) => {
+      if (true) {
+          resolve('Yes!');
+      } else {
+          const reason = new Error('Nope');
+          reject(reason);
+      }
+  }
+);
+
+shouldIBuyTheNewIphone.then( (msg) => {
+  console.log(msg)
+}).catch((error) => {
+  console.log(error)
+})

@@ -12,7 +12,7 @@ function createPerson() {
       age: age
   }
 }
-// console.log(createPerson())
+console.log(createPerson())
 
 
 // New way
@@ -24,7 +24,7 @@ function createPerson2() {
       age
   }
 }
-// console.log(createPerson2())
+console.log(createPerson2())
 
 
 // Renaming
@@ -36,7 +36,7 @@ function createPerson3() {
       age
   }
 }
-// console.log(createPerson3())
+console.log(createPerson3())
 
 
 
@@ -57,4 +57,4 @@ var person = {
       console.log(this.name);
   }
 };
-// person.sayName()
+person.sayName()

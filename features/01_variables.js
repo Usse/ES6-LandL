@@ -19,15 +19,13 @@ function myFunction() {
   if (true) {
     let x = 15
     let y = 20
-    // console.log(x)
-    // console.log(y)
+    console.log(x)
+    console.log(y)
   }
-  // console.log(x)
-  // console.log(y)
+  console.log(x)
+  console.log(y)
 }
 
 myFunction()
 
-
-
-// PI = 6
+PI = 6 // This will throw an error

@@ -10,8 +10,7 @@ function *foo() {
 }
 let myFoo = foo();
 
-// console.log(myFoo.next());
-// console.log(myFoo.next());
-// console.log(myFoo.next());
-// console.log(myFoo.next());
-// console.log(myFoo.next());
+console.log(myFoo.next());
+console.log(myFoo.next());
+console.log(myFoo.next());
+console.log(myFoo.next());

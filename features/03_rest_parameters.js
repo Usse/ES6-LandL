@@ -10,7 +10,7 @@ function logMyBooks1() {
     console.log(book)
   })
 }
-// logMyBooks1('Book 1','Book 2')
+logMyBooks1('Book 1','Book 2')
 
 
 // New way
@@ -19,10 +19,10 @@ function logMyBooks2(...books) {
     console.log(book)
   })
 }
-// logMyBooks2('Book 1','Book 2')
+logMyBooks2('Book 1','Book 2')
 
 
 function logMyBooks3(author, ...books) {
   console.log(author, books)
 }
-// logMyBooks3('Bob','Book 1','Book 2')
+logMyBooks3('Bob','Book 1','Book 2')
